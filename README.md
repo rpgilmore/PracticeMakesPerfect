@@ -12,6 +12,3 @@ Python --> /Python_for_Biologists/
            
 C --> /C_Prog_Lang_2e/
       /Proj_Euler/
-      
-      
-      
