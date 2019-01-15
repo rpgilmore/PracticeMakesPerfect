@@ -42,8 +42,20 @@ def RFragLen(seq, Rseq):
     print (siteSet)
         
 
+def Exon(seq):
+    firstEx = seq[:64] #Exon start and stop sites were declared in Jones's problem
+    intron = seq[64:91].lower()
+    secondEx = seq[91:]
+
+    codingPer = round((len(firstEx)+len(secondEx))/len(seq)*100, 2)
     
-RFragLen('ACTGATCGATTACGTATAGTAGAATTCTATCATACATATATATCGATGCGAATTCAT', 'GAATTC')
+    finalSeq = firstEx+intron+secondEx
+    print(finalSeq)
+    #print (codingPer)
+    
+
+Exon('ATCGATCGATCGATCGACTGACTAGTCATAGCTATGCATGTAGCTACTCGATCGATCGATCGATCGATCGATCGATCGATCGATCATGCTATCATCGATCGATATCGATGCATCGACTACTAT')
+#RFragLen('ACTGATCGATTACGTATAGTAGAATTCTATCATACATATGAATTCATATCGATGCGAATTCAT', 'GAATTC')
 #ATContent('ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT')
 
 #RevComp('ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT')
