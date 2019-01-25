@@ -31,7 +31,7 @@ def checkSpecies(list_tuples): #checked, it works
     for gene in list_tuples:
         species = gene[0]
         gene_name = gene[2]
-        #if ("melanogaster" or "simulans") in species doesn't work
+        
         if ("melanogaster" in species) or ("simulans" in species):
             dros_genes.append(gene_name)
 
@@ -112,21 +112,24 @@ def writeConditions():
     all_lists = []
     
     name_by_species = checkSpecies(gene_tuples)
+    name_by_species.insert(0, "Results of Check Species")
     
     name_by_len = checkLen(gene_tuples)
+    name_by_len.insert(0, "Results of Check Length")
     
     name_by_AT = checkAT(gene_tuples)
+    name_by_AT.insert(0, "Results of Check AT Content")
     
     name_by_complex = complexCondition(gene_tuples)
+    name_by_complex.insert(0, "Results of Complex Condition")
     
     amount_AT = hiMedLo(gene_tuples)
+    amount_AT.insert(0, "Results of Amount AT Content")
 
     all_lists.extend(name_by_species+name_by_len+name_by_AT
-                                       +name_by_complex+amount_AT)
-                                       
-    print(all_lists)
+                     +name_by_complex+amount_AT)
     
-    #output.write("\n".join(all_lists))
+    output.write("\n".join(all_lists))
     
     output.close()
     

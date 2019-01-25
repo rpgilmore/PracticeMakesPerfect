@@ -1,0 +1,21 @@
+Results of Check Species
+kdy647
+jdg766
+kdy533
+Results of Check Length
+kdy647
+kdy533
+teg436
+Results of Check AT Content
+teg436
+Results of Complex Condition
+kdy533
+hdt739
+hdu045
+Results of Amount AT Content
+kdy647 The AT content is high
+jdg766 The AT content is moderate
+kdy533 The AT content is moderate
+hdt739 The AT content is low
+hdu045 The AT content is moderate
+teg436 The AT content is moderate
