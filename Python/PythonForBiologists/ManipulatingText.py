@@ -15,7 +15,7 @@ def RevComp(seq):
     baseComp = {'A':'T',
                 'C':'G',
                 'G':'C',
-                'T':'A'
+                'T':'A',
                 }
     
     compTable = seq.maketrans(baseComp)
